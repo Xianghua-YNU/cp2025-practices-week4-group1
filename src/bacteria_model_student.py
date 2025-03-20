@@ -8,7 +8,7 @@ class BacteriaModel:
 
     def v_model(self, t):
         return 1 - np.exp(-t/self.tau)
-
+ 
     def w_model(self, t):
         return self.A * (np.exp(-t/self.tau) - 1 + t/self.tau)
 
